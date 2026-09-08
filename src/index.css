@@ -723,6 +723,158 @@ p {
   transform: scale(1.03);
 }
 
+/* —— Practice / working samples —— */
+.practice {
+  border-bottom: 1px solid var(--line);
+}
+
+.practice__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.practice__filter {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.practice__filter:hover,
+.practice__filter.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--timber);
+}
+
+.practice__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+}
+
+.practice__card {
+  display: grid;
+  gap: 0.65rem;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+}
+
+.practice__visual {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #c8cbc4;
+}
+
+.practice__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.7s var(--ease);
+}
+
+.practice__card:hover .practice__visual img {
+  transform: scale(1.04);
+}
+
+.practice__meta {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.practice__cat {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--timber-deep);
+}
+
+.practice__name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(14, 16, 18, 0.88);
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  animation: rise 0.35s var(--ease) both;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper);
+  opacity: 0.85;
+}
+
+.lightbox__close:hover {
+  opacity: 1;
+}
+
+.lightbox__figure {
+  margin: 0;
+  max-width: min(1100px, 100%);
+  max-height: 90vh;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.lightbox__figure img {
+  max-height: 72vh;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  background: #111;
+}
+
+.lightbox__figure figcaption {
+  color: var(--paper);
+  display: grid;
+  gap: 0.25rem;
+}
+
+.lightbox__figure strong {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.lightbox__figure span {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247, 246, 242, 0.65);
+}
+
+.lightbox__figure p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(247, 246, 242, 0.82);
+  max-width: 60ch;
+}
+
 .project-next {
   width: min(100%, var(--max));
   margin: 0 auto;

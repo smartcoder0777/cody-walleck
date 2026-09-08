@@ -25,7 +25,10 @@ export function Layout() {
         <nav aria-label="Primary">
           <ul className="nav__links">
             <li>
-              <a href={isHome ? '#work' : '/#work'}>Work</a>
+              <a href={isHome ? '#practice' : '/#practice'}>Practice</a>
+            </li>
+            <li>
+              <a href={isHome ? '#work' : '/#work'}>Projects</a>
             </li>
             <li>
               <a href={isHome ? '#about' : '/#about'}>About</a>
@@ -43,7 +46,7 @@ export function Layout() {
         <span>
           © {new Date().getFullYear()} {profile.fullName}
         </span>
-        <span>Architecture · Selected Works</span>
+        <span>Structural Engineering · MEP Design</span>
       </footer>
     </div>
   )

@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { PracticeGallery } from '../components/PracticeGallery'
 import { profile, projects, shortLocation } from '../data/projects'
-
-const hero = projects.find((p) => p.id === 'hotel-saint-augustine')!
 
 export function Home() {
   const { hash } = useLocation()
@@ -18,36 +17,38 @@ export function Home() {
       <section className="hero" aria-label="Introduction">
         <div className="hero__media">
           <img
-            src={hero.cover}
-            alt="Hotel Saint Augustine exterior at dusk"
+            src="/working/2.jpg"
+            alt="3D structural steel BIM model"
             fetchPriority="high"
           />
         </div>
         <div className="hero__veil" aria-hidden="true" />
         <div className="hero__content">
           <h1 className="hero__brand">{profile.name}</h1>
-          <p className="hero__headline">Architecture shaped by light, material, and place.</p>
+          <p className="hero__headline">{profile.title}</p>
           <p className="hero__support">{profile.intro}</p>
           <div className="hero__actions">
-            <a className="btn btn--solid" href="#work">
-              View work
+            <a className="btn btn--solid" href="#practice">
+              View practice
             </a>
-            <a className="btn btn--ghost" href="#contact">
-              Get in touch
+            <a className="btn btn--ghost" href="#work">
+              Built projects
             </a>
           </div>
         </div>
       </section>
 
+      <PracticeGallery />
+
       <section className="section" id="work">
         <div className="section__head">
           <div>
-            <p className="section__label">Selected work</p>
-            <h2 className="section__title">Projects across practice</h2>
+            <p className="section__label">Built projects</p>
+            <h2 className="section__title">Delivered across practice</h2>
           </div>
           <p className="section__lede">
-            Structural, MEP, civil, and BIM coordination across hospitality, residential, civic,
-            and mixed-use work with Lake Flato, Valley Quest Design, and RC Monkeys.
+            Structural, MEP, civil, and BIM coordination on hospitality, residential, civic, and
+            mixed-use work with Lake Flato, Valley Quest Design, and RC Monkeys.
           </p>
         </div>
 
@@ -94,13 +95,13 @@ export function Home() {
           <div className="about__grid">
             <div className="about__copy">
               <p>
-                {profile.fullName} is an architect based in {profile.location}, with experience in
-                structural design and modeling, MEP coordination, civil/site work, cost support, and
-                BIM/VDC documentation.
+                {profile.fullName} is a {profile.title.toLowerCase()} based in {profile.location},
+                focused on structural modeling and analysis, MEP design coordination, civil/site
+                support, cost estimating, and BIM/VDC documentation.
               </p>
               <p>
-                Practice spans Valley Quest Design, Lake Flato, and RC Monkeys—across hospitality,
-                education, workplace, residential, historic preservation, and transit projects.
+                Work spans Valley Quest Design, Lake Flato, and RC Monkeys—pairing analysis and
+                systems design with construction-ready deliverables.
               </p>
             </div>
             <div className="about__lists">

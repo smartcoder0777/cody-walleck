@@ -371,7 +371,7 @@ export const projects: Project[] = [
 export const profile = {
   name: 'Cody Walleck',
   fullName: 'Cody Lane Walleck',
-  title: 'Architect',
+  title: 'Structural Engineer & MEP Designer',
   location: 'Gonzales, Texas',
   email: 'cody.walleck1995@gmail.com',
   education: [
@@ -413,7 +413,7 @@ export const profile = {
     },
   ],
   intro:
-    'Architect focused on structural coordination, MEP integration, BIM/VDC, and places grounded in material clarity and site.',
+    'Structural engineering and MEP design—analysis models, BIM coordination, drawings, and systems that fit structure and construction.',
 }
 
 export function getProject(id: string) {
