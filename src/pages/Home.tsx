@@ -47,7 +47,7 @@ export function Home() {
             <h2 className="section__title">Delivered across practice</h2>
           </div>
           <p className="section__lede">
-            Structural, MEP, civil, and BIM coordination on hospitality, residential, civic, and
+            Structural, civil, and BIM coordination on hospitality, residential, civic, and
             mixed-use work with Lake Flato, Valley Quest Design, and RC Monkeys.
           </p>
         </div>
@@ -96,12 +96,12 @@ export function Home() {
             <div className="about__copy">
               <p>
                 {profile.fullName} is a {profile.title.toLowerCase()} based in {profile.location},
-                focused on structural modeling and analysis, MEP design coordination, civil/site
-                support, cost estimating, and BIM/VDC documentation.
+                focused on structural modeling and analysis, civil/site support, cost estimating,
+                and BIM/VDC documentation.
               </p>
               <p>
                 Work spans Valley Quest Design, Lake Flato, and RC Monkeys—pairing analysis and
-                systems design with construction-ready deliverables.
+                coordination with construction-ready deliverables.
               </p>
             </div>
             <div className="about__lists">

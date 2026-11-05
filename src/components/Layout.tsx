@@ -46,7 +46,7 @@ export function Layout() {
         <span>
           © {new Date().getFullYear()} {profile.fullName}
         </span>
-        <span>Structural Engineering · MEP Design</span>
+        <span>Structural Engineering · BIM</span>
       </footer>
     </div>
   )

@@ -23,11 +23,11 @@ export function PracticeGallery() {
       <div className="section__head">
         <div>
           <p className="section__label">Technical practice</p>
-          <h2 className="section__title">Drawings, analysis & MEP</h2>
+          <h2 className="section__title">Drawings, analysis & BIM</h2>
         </div>
         <p className="section__lede">
-          Working samples beyond finished photos—structural BIM, FEA analysis, MEP coordination
-          models, clash detection, and civil drawings.
+          Working samples beyond finished photos—structural BIM, FEA analysis, clash detection,
+          and civil drawings.
         </p>
       </div>
 
