@@ -358,15 +358,15 @@ export const profile = {
   education: [
     {
       school: 'University of Texas at Austin',
-      degree: 'Master of Architecture',
+      degree: 'Master of Engineering',
       years: '9/2015 – 10/2017',
       place: 'Austin, TX',
       url: 'https://www.utexas.edu',
     },
     {
       school: 'University of Texas at Austin',
-      degree: 'Bachelor of Architecture',
-      years: '9/2010 – 8/2015',
+      degree: 'Bachelor of Engineering',
+      years: '9/2011 – 8/2015',
       place: 'Austin, TX',
       url: 'https://www.utexas.edu',
     },
