@@ -155,6 +155,9 @@ export function Home() {
         <p className="contact__email">
           <a href={`mailto:${profile.email}`}>{profile.email}</a>
         </p>
+        <p className="contact__phone">
+          <a href={`tel:${profile.phone}`}>{profile.phone}</a>
+        </p>
         <p className="contact__place">{profile.location}</p>
         <a className="btn btn--ink" href={`mailto:${profile.email}`}>
           Email Cody
