@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cody Lane Walleck — Resume</title>
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #555;
+        --line: #ccc;
+        --accent: #2c3a2e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: 'Segoe UI', Calibri, Candara, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.35;
+        background: #e8e8e8;
+      }
+
+      .page {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0.5in auto;
+        padding: 0.55in 0.6in 0.5in;
+        background: #fff;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+      }
+
+      header {
+        text-align: center;
+        border-bottom: 1.5px solid var(--accent);
+        padding-bottom: 0.35rem;
+        margin-bottom: 0.55rem;
+      }
+
+      h1 {
+        margin: 0 0 0.2rem;
+        font-size: 18pt;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .headline {
+        margin: 0 0 0.25rem;
+        font-size: 10.5pt;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .contact {
+        margin: 0;
+        font-size: 9.5pt;
+        color: var(--muted);
+      }
+
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      h2 {
+        margin: 0.65rem 0 0.3rem;
+        padding-bottom: 0.1rem;
+        font-size: 10.5pt;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--line);
+        color: var(--accent);
+      }
+
+      p {
+        margin: 0 0 0.35rem;
+      }
+
+      .summary {
+        text-align: justify;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.1rem 0.75rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .skills li {
+        position: relative;
+        padding-left: 0.7rem;
+        font-size: 9.75pt;
+      }
+
+      .skills li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
+
+      .job {
+        margin-top: 0.45rem;
+      }
+
+      .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 0.75rem;
+      }
+
+      .job-firm {
+        margin: 0;
+        font-size: 11pt;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .job-dates {
+        flex-shrink: 0;
+        font-size: 9.5pt;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .job-role {
+        margin: 0.05rem 0 0.2rem;
+        font-style: italic;
+        font-size: 10pt;
+      }
+
+      ul {
+        margin: 0.15rem 0 0.25rem;
+        padding-left: 1.05rem;
+      }
+
+      li {
+        margin-bottom: 0.12rem;
+      }
+
+      .project {
+        margin-top: 0.3rem;
+      }
+
+      .project-title {
+        margin: 0 0 0.1rem;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+
+      .edu-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 0.75rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .edu-school {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .edu-degree {
+        margin: 0;
+        font-size: 10pt;
+      }
+
+      .tech-block {
+        margin-bottom: 0.2rem;
+      }
+
+      .tech-label {
+        font-weight: 700;
+      }
+
+      .projects-list {
+        columns: 2;
+        column-gap: 1rem;
+        margin: 0.15rem 0 0;
+        padding-left: 1.05rem;
+      }
+
+      .print-hint {
+        max-width: 8.5in;
+        margin: 0 auto 0.35in;
+        text-align: center;
+        font-size: 0.85rem;
+        color: #666;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .print-hint {
+          display: none;
+        }
+
+        .page {
+          width: auto;
+          min-height: auto;
+          margin: 0;
+          padding: 0.45in 0.5in;
+          box-shadow: none;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        @page {
+          margin: 0.4in;
+          size: letter;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="print-hint">Open this page and use Print → Save as PDF (Ctrl/Cmd + P).</p>
+
+    <article class="page">
+      <header>
+        <h1>Cody Lane Walleck</h1>
+        <p class="headline">Structural Engineer &amp; BIM Specialist | Structural Coordination | Civil &amp; Site</p>
+        <p class="contact">
+          Gonzales, Texas, USA ·
+          <a href="tel:+14099954200">+1 (409) 995-4200</a> ·
+          <a href="mailto:cody.walleck1995@gmail.com">cody.walleck1995@gmail.com</a><br />
+          Portfolio:
+          <a href="https://cody-walleck.vercel.app" target="_blank" rel="noreferrer"
+            >cody-walleck.vercel.app</a
+          >
+        </p>
+      </header>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+          Structural and multidisciplinary design professional with 8+ years of experience supporting
+          complex commercial, institutional, hospitality, residential, transportation, historic
+          preservation, and mixed-use projects. Experienced in BIM/VDC coordination, Revit modeling,
+          Scan-to-BIM, existing-condition documentation, construction documentation, structural
+          coordination, quantity takeoffs, cost support, civil/site coordination, and
+          interdisciplinary project coordination.
+        </p>
+        <p class="summary">
+          Strong background working across all project phases, including existing-condition
+          assessment, conceptual design support, design development, BIM modeling, construction
+          documents, consultant coordination, demolition documentation, and construction support.
+          Experienced with mass timber, historic preservation, renovation, adaptive reuse,
+          transportation infrastructure, hospitality, higher education, and large-scale site
+          development.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Competencies</h2>
+        <ul class="skills">
+          <li>Building Information Modeling (BIM)</li>
+          <li>Virtual Design &amp; Construction (VDC)</li>
+          <li>Autodesk Revit</li>
+          <li>Scan-to-BIM</li>
+          <li>Laser Scanning &amp; Existing Conditions</li>
+          <li>Structural Modeling &amp; Coordination</li>
+          <li>Structural Analysis Support</li>
+          <li>Construction Documentation</li>
+          <li>Design Development</li>
+          <li>Construction Documents (CD)</li>
+          <li>Interdisciplinary Coordination</li>
+          <li>Clash Detection &amp; Model Coordination</li>
+          <li>Historic Preservation Documentation</li>
+          <li>Renovation &amp; Adaptive Reuse</li>
+          <li>Demolition Documentation</li>
+          <li>Existing Building Documentation</li>
+          <li>Quantity Takeoffs</li>
+          <li>Material Takeoffs</li>
+          <li>Cost Estimating Support</li>
+          <li>Value Engineering</li>
+          <li>Site &amp; Civil Coordination</li>
+          <li>Grading &amp; Drainage Coordination</li>
+          <li>Accessibility Coordination</li>
+          <li>Construction Administration Support</li>
+          <li>Plans, Sections &amp; Elevations</li>
+          <li>Details &amp; Schedules</li>
+          <li>Consultant Coordination</li>
+          <li>Mass Timber Coordination</li>
+          <li>Hospitality Projects</li>
+          <li>Institutional &amp; Higher Education</li>
+          <li>Transportation Infrastructure</li>
+          <li>Architectural Coordination</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <p class="job-firm">Structural Design Studio | Salt Lake City, Utah</p>
+            <span class="job-dates">September 2024 – September 2026</span>
+          </div>
+          <p class="job-role">BIM/VDC Designer | Structural Coordination</p>
+          <ul>
+            <li>
+              Developed detailed existing-condition and Scan-to-BIM models using laser scanning data
+              for renovation, restoration, and historic preservation projects.
+            </li>
+            <li>
+              Produced coordinated Revit models, construction documents, demolition drawings, plans,
+              sections, elevations, details, and schedules.
+            </li>
+            <li>
+              Coordinated architectural, structural, civil/site, and construction disciplines across
+              multidisciplinary project teams.
+            </li>
+            <li>
+              Supported structural modeling and coordination for foundations, framing, steel
+              structures, historic masonry, roof systems, seismic retrofit, and temporary structural
+              support.
+            </li>
+            <li>
+              Performed quantity takeoffs and provided support for cost estimating, construction
+              sequencing, phasing, value engineering, and procurement coordination.
+            </li>
+            <li>
+              Documented existing buildings and historically significant architectural elements using
+              laser scanning, point-cloud workflows, and Scan-to-BIM methodologies.
+            </li>
+            <li>
+              Supported renovation and preservation documentation while coordinating new work with
+              historic structures.
+            </li>
+          </ul>
+
+          <div class="project">
+            <p class="project-title">Five Points MARTA Station Renovation | Atlanta, Georgia</p>
+            <ul>
+              <li>
+                Developed structural and existing-condition models supporting demolition, temporary
+                support, new canopy construction, steel framing, foundations, and station renovation.
+              </li>
+              <li>
+                Coordinated accessibility improvements, pedestrian circulation, utilities, drainage,
+                and site infrastructure.
+              </li>
+              <li>
+                Produced demolition documentation, BIM models, construction documents, quantity
+                takeoffs, and multidisciplinary coordination deliverables.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">Georgia State Capitol | Atlanta, Georgia</p>
+            <ul>
+              <li>
+                Developed existing-condition BIM models and documentation supporting historic
+                preservation and restoration.
+              </li>
+              <li>
+                Coordinated structural repairs, historic masonry, dome components, temporary support,
+                scaffolding, and integration of new construction with historic fabric.
+              </li>
+              <li>
+                Supported laser scanning, Scan-to-BIM workflows, restoration documentation, cost
+                estimating, and phased construction planning.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">Wadsworth Chapel | Los Angeles, California</p>
+            <ul>
+              <li>
+                Developed existing-condition models supporting historic rehabilitation, structural
+                strengthening, seismic retrofit coordination, foundation repairs, and roof
+                rehabilitation.
+              </li>
+              <li>
+                Coordinated accessibility and site improvements within a historic campus context.
+              </li>
+              <li>
+                Produced Scan-to-BIM documentation, demolition and repair drawings, Revit models, and
+                historic preservation documentation.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <p class="job-firm">Lake|Flato | San Antonio, Texas</p>
+            <span class="job-dates">February 2020 – September 2024</span>
+          </div>
+          <p class="job-role">Structural &amp; BIM/VDC Designer | Multidisciplinary Coordination</p>
+          <ul>
+            <li>
+              Supported multidisciplinary design and BIM coordination for institutional, hospitality,
+              residential, commercial, and mass-timber projects.
+            </li>
+            <li>
+              Developed and coordinated Revit models integrating architectural, structural, civil,
+              landscape, and building envelope systems.
+            </li>
+            <li>
+              Produced construction documentation including plans, elevations, sections, details,
+              schedules, and consultant coordination packages.
+            </li>
+            <li>
+              Coordinated structural systems including mass timber, steel, concrete, foundations,
+              timber framing, glulam beams, DLT panels, and structural connections.
+            </li>
+            <li>
+              Performed model-based quantity takeoffs and supported cost planning, material
+              coordination, value engineering, procurement, and construction coordination.
+            </li>
+            <li>
+              Collaborated with architects, engineers, consultants, contractors, fabricators, and
+              specialty trades.
+            </li>
+          </ul>
+
+          <div class="project">
+            <p class="project-title">
+              University of Pennsylvania — Amy Gutmann Hall | Philadelphia, Pennsylvania
+            </p>
+            <ul>
+              <li>
+                Coordinated BIM models for a higher-education facility incorporating a mass-timber
+                structural system.
+              </li>
+              <li>
+                Supported coordination between mass timber structure, architectural envelope,
+                laboratory spaces, and prefabricated components.
+              </li>
+              <li>
+                Developed construction documentation and multidisciplinary BIM coordination
+                deliverables.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">Hotel Saint Augustine | Houston, Texas</p>
+            <ul>
+              <li>
+                Supported structural and multidisciplinary coordination for hotel guestrooms,
+                restaurant, bar, event spaces, pool facilities, and outdoor courtyard environments.
+              </li>
+              <li>
+                Coordinated structural framing, foundations, steel and timber elements, site
+                infrastructure, drainage, accessibility, and landscape interfaces.
+              </li>
+              <li>
+                Produced BIM models, construction documents, quantity takeoffs, and interdisciplinary
+                coordination deliverables.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">High Meadow Residence | Aspen, Colorado</p>
+            <ul>
+              <li>
+                Supported structural and architectural coordination for timber framing, steel
+                elements, long-span beams, foundations, and custom residential components.
+              </li>
+              <li>
+                Developed BIM documentation while coordinating the residence with sensitive meadow
+                and native landscape conditions.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">The Soto Building | San Antonio, Texas</p>
+            <ul>
+              <li>
+                Supported BIM and multidisciplinary coordination for a commercial mass-timber
+                development.
+              </li>
+              <li>
+                Coordinated DLT floor and roof panels, glulam columns and beams, concrete podium
+                systems, and structural connections.
+              </li>
+              <li>
+                Produced Revit models, construction documentation, quantity takeoffs, and consultant
+                coordination deliverables.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <p class="job-firm">Valley Quest Design | Denton, Texas</p>
+            <span class="job-dates">December 2017 – January 2020</span>
+          </div>
+          <p class="job-role">Structural &amp; BIM Designer | Civil &amp; Site Coordination</p>
+          <ul>
+            <li>
+              Supported multidisciplinary design, BIM modeling, and construction documentation for
+              sports, commercial, multifamily, and mixed-use developments.
+            </li>
+            <li>
+              Developed coordinated models for structural systems including foundations, columns,
+              beams, slabs, framing, stairs, and supporting building components.
+            </li>
+            <li>
+              Supported civil and site coordination including grading, drainage, stormwater
+              management, utilities, paving, parking, sidewalks, and accessibility.
+            </li>
+            <li>
+              Performed model-based quantity takeoffs and supported cost estimating, material
+              tracking, budget analysis, and value engineering.
+            </li>
+            <li>
+              Produced construction documents including plans, sections, elevations, details,
+              schedules, and interdisciplinary drawing packages.
+            </li>
+          </ul>
+
+          <div class="project">
+            <p class="project-title">Oak Grove Softball Complex Renovation | Grapevine, Texas</p>
+            <ul>
+              <li>
+                Supported multidisciplinary design coordination for sports fields, shade structures,
+                grandstands, concession/restroom buildings, maintenance facilities, and site
+                infrastructure.
+              </li>
+              <li>
+                Coordinated structural, civil/site, landscape, drainage, utilities, parking,
+                accessibility, and construction documentation.
+              </li>
+              <li>
+                Supported quantity takeoffs, cost estimating, material tracking, value engineering,
+                and consultant coordination.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">The Patios at the Rail | Frisco, Texas</p>
+            <ul>
+              <li>
+                Developed coordinated BIM models for foundations, columns, beams, slabs, framing,
+                stairs, and building systems.
+              </li>
+              <li>
+                Coordinated site infrastructure, grading, drainage, utilities, paving, and parking.
+              </li>
+              <li>Produced construction documentation and model-based quantity takeoffs.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <p class="project-title">The Towers at the Rail | Frisco, Texas</p>
+            <ul>
+              <li>Supported BIM coordination for a multifamily and mixed-use development.</li>
+              <li>
+                Coordinated structural framing, utilities, stormwater, site development, landscape
+                planning, and accessibility requirements.
+              </li>
+              <li>
+                Produced Revit models, construction drawings, schedules, details, quantity takeoffs,
+                and interdisciplinary documentation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="edu-row">
+          <div>
+            <span class="edu-school">University of Texas at Austin</span>
+            <p class="edu-degree">Master of Engineering (M.Eng.)</p>
+          </div>
+          <span class="job-dates">September 2015 – October 2017</span>
+        </div>
+        <div class="edu-row">
+          <div>
+            <span class="edu-school">University of Texas at Austin</span>
+            <p class="edu-degree">Bachelor of Engineering (B.Eng.)</p>
+          </div>
+          <span class="job-dates">September 2011 – August 2015</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <p class="tech-block">
+          <span class="tech-label">BIM &amp; Modeling:</span> Autodesk Revit, BIM Coordination, VDC,
+          Scan-to-BIM, Point Cloud Modeling, Existing-Condition Modeling
+        </p>
+        <p class="tech-block">
+          <span class="tech-label">Documentation:</span> Construction Documents, Demolition Drawings,
+          Plans, Sections, Elevations, Details, Schedules, Specifications Support
+        </p>
+        <p class="tech-block">
+          <span class="tech-label">Design Coordination:</span> Structural Coordination, Architectural
+          Coordination, Civil/Site Coordination, Consultant Coordination
+        </p>
+        <p class="tech-block">
+          <span class="tech-label">Analysis &amp; Project Support:</span> Quantity Takeoffs, Material
+          Takeoffs, Cost Estimating Support, Value Engineering, Construction Sequencing, Phasing
+          Coordination
+        </p>
+        <p class="tech-block">
+          <span class="tech-label">Project Types:</span> Higher Education, Hospitality, Commercial,
+          Mixed-Use, Multifamily, Residential, Sports Facilities, Transportation, Government
+          Buildings, Historic Preservation, Renovation, Adaptive Reuse, Mass Timber
+        </p>
+      </section>
+
+      <section>
+        <h2>Professional Project Experience</h2>
+        <ul class="projects-list">
+          <li>University of Pennsylvania — Amy Gutmann Hall</li>
+          <li>Hotel Saint Augustine</li>
+          <li>High Meadow Residence — Aspen</li>
+          <li>The Soto Building</li>
+          <li>Five Points MARTA Station</li>
+          <li>Georgia State Capitol</li>
+          <li>Wadsworth Chapel</li>
+          <li>Oak Grove Softball Complex Renovation</li>
+          <li>The Patios at the Rail</li>
+          <li>The Towers at the Rail</li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

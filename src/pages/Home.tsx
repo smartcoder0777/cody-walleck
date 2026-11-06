@@ -48,7 +48,7 @@ export function Home() {
           </div>
           <p className="section__lede">
             Structural, civil, and BIM coordination on hospitality, residential, civic, and
-            mixed-use work with Lake Flato, Valley Quest Design, and RC Monkeys.
+            mixed-use work with Lake Flato, Valley Quest Design, and Structural Design Studio.
           </p>
         </div>
 
@@ -100,8 +100,8 @@ export function Home() {
                 and BIM/VDC documentation.
               </p>
               <p>
-                Work spans Valley Quest Design, Lake Flato, and RC Monkeys—pairing analysis and
-                coordination with construction-ready deliverables.
+                Work spans Valley Quest Design, Lake Flato, and Structural Design Studio—pairing
+                analysis and coordination with construction-ready deliverables.
               </p>
             </div>
             <div className="about__lists">

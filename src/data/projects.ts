@@ -244,7 +244,7 @@ export const projects: Project[] = [
   {
     id: 'georgia-state-capitol',
     title: 'Georgia State Capitol',
-    firm: 'RC Monkeys',
+    firm: 'Structural Design Studio',
     category: 'Government Building',
     location: '206 Washington Street SW, Atlanta, GA 30334',
     year: '2024–2027',
@@ -279,7 +279,7 @@ export const projects: Project[] = [
   {
     id: 'wadsworth-chapel',
     title: 'Wadsworth Chapel',
-    firm: 'RC Monkeys',
+    firm: 'Structural Design Studio',
     category: 'Historic',
     location: '11301 Wilshire Blvd, Los Angeles, CA 90073',
     year: '2026',
@@ -314,7 +314,7 @@ export const projects: Project[] = [
   {
     id: 'five-points-marta',
     title: 'Five Points MARTA Station',
-    firm: 'RC Monkeys',
+    firm: 'Structural Design Studio',
     category: 'Station',
     location: 'Atlanta, GA',
     year: '2025–2028',
@@ -373,10 +373,10 @@ export const profile = {
   ],
   experience: [
     {
-      firm: 'RC Monkeys',
-      place: 'Atlanta, GA',
+      firm: 'Structural Design Studio',
+      place: 'Salt Lake City, UT',
       years: '9/2024 – 9/2026',
-      address: '2310 Parklake Drive NE, Suite 530, Atlanta, GA 30345',
+      address: 'Salt Lake City, UT',
     },
     {
       firm: 'Lake Flato',
